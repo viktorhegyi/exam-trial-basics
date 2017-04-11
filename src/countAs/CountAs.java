@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class CountAs {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    int counter = 1;
+    int counter = 0;
     System.out.println("Write in the file name: ");
     String input = scanner.next();
     char a = 'a';
@@ -23,7 +23,7 @@ public class CountAs {
       List<String> text = Files.readAllLines(path);
 
       for (String words : text) {
-        String sentence = words;
+        String sentence = words.toLowerCase();
         for (int i = 0; i < sentence.length() ; i++) {
           if (sentence.charAt(i) == a) {
             counter++;
