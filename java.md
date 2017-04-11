@@ -32,4 +32,16 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: We can crete with two function. Once we have a bulit in
+		class for this: java.util.Random class which has a method. If
+		we want to create we call the class as
+		 Random random = new Random();
+		and after we initialize a new number as random number:
+		int x = random.nextInt(100);
+		where the 100 means the max value of the random number.
+		Second option where we initialize a new integer and give it a
+		Math.random method as we cast it to (int) like:
+		int x = (int) (Math.random() * 100)
+		where we multiply the number with 100, becasue the Math.random
+		generate the number between 0 and 1, so we multiply to have
+		result between 0 and 100.

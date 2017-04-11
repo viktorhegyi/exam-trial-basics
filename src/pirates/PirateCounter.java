@@ -1,6 +1,7 @@
 package pirates;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by hegyi on 2017-04-11.
