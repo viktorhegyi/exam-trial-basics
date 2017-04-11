@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class Seconds {
 
-  public static ArrayList second(ArrayList<Integer> array ) {
+  public static ArrayList everySecond(ArrayList<Integer> array ) {
     ArrayList<Integer> listChanged = new ArrayList<>();
     for (int i = 1; i < array.size(); i = i + 2) {
       listChanged.add(array.get(i));
@@ -18,7 +18,7 @@ public class Seconds {
   public static void main(String[] args) {
     ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
 
-    System.out.println(second(list));
+    System.out.println(everySecond(list));
   }
 
 }

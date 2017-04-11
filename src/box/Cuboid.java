@@ -26,4 +26,11 @@ public class Cuboid {
     return volume;
   }
 
+  public static void main(String[] args) {
+    Cuboid cuboid = new Cuboid(3,4,5);
+
+    System.out.println("The surface of cuboid: " + cuboid.getSurface());
+    System.out.println("The volume of cuboid: " + cuboid.getVolume());
+  }
+
 }
